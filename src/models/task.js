@@ -21,17 +21,17 @@ const taskSchema = new mongoose.Schema(
         }
       }
     },
-    password: {
-      type: String,
-      required: true,
-      minlength: 7,
-      trim: true,
-      validate(value) {
-        if (value === "password") {
-          throw new Error("bad password");
-        }
-      }
-    },
+    // password: {
+    //   type: String,
+    //   required: true,
+    //   minlength: 7,
+    //   trim: true,
+    //   validate(value) {
+    //     if (value === "password") {
+    //       throw new Error("bad password");
+    //     }
+    //   }
+    // },
     owner: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
